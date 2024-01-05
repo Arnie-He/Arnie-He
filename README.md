@@ -1,6 +1,6 @@
-## Hi👋, this is Naicheng He
+<h2 align = 'center'> Hi👋, this is Naicheng He </h2>
 
-**I'm currently an Undergraduate Student at Brown University interested in solving robotics problems with both math and machine-learning algorithms! I am currently a member of the Automatic Coordination of Teams (ACT) Lab working on discontinuity based multi-agent path findind (db-MAPF).**
+<h3 align = 'center'> I'm currently an Undergraduate Student at Brown University interested in solving robotics problems with both math and machine-learning algorithms! I am currently a member of the Automatic Coordination of Teams (ACT) Lab working on discontinuity based multi-agent path findind (db-MAPF). </h3>
 
 
 <!--
