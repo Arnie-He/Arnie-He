@@ -5,7 +5,7 @@
 <p> I'm currently learning RL with David Silver and investigating topics of game theory. </p>
 
 <p> Projects I've done </p>
-1. (Ongoing) Pipelining natural language to multi-robot task allocation. Command a team of robots to do a sequence of tasks is hard, we investigate both direct commanding and human-robot collaboration in this project. For example, "do A and do B but not before you do C. I will do D first." We have made significant improvement in accuracy by fine-tuning LLM on natural language to linear temporal logic translation and then carry out the task using LTL commands. The current write-up can be viewed here.
+1. (Ongoing) Pipelining natural language to multi-robot task allocation. Commanding a team of robots to do a sequence of tasks is hard, so we utilized a middle layer of logic to investigate both direct commanding and human-robot collaboration in this project. For example, a command could look like "do A and do B but not before you do C. I will do D first." We have significantly improved success rate by fine-tuning an LLM on natural language to linear temporal logic translation and then carrying out the task using LTL commands. The current write-up can be viewed here.
 
 <!--
 **Arnie-He/Arnie-He** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
