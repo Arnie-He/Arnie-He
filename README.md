@@ -2,9 +2,9 @@
 
 <h3 align = 'center'> I am an Undergraduate Student at Brown University interested in solving robotics problems with both math and machine-learning algorithms! I am currently a member of the Automatic Coordination of Teams (ACT) Lab working on discontinuity based multi-agent path findind (db-MAPF). </h3>
 
-<p> I'm currently learning RL with David Silver and investigating topics of game theory. </p>
+<h5> I'm currently learning RL with David Silver and investigating topics of game theory. </h5>
 
-<p> Projects I've done </p>
+<h5> Projects I've done: </h5>
 1. (Ongoing) Pipelining natural language to multi-robot task allocation. Commanding a team of robots to do a sequence of tasks is hard, so we utilized a middle layer of logic to investigate both direct commanding and human-robot collaboration in this project. For example, a command could look like "do A and do B but not before you do C. I will do D first." We have significantly improved success rate by fine-tuning an LLM on natural language to linear temporal logic translation and then carrying out the task using LTL commands. The current write-up can be viewed here.
 
 <!--
