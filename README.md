@@ -2,6 +2,10 @@
 
 <h3 align = 'center'> I am an Undergraduate Student at Brown University interested in solving robotics problems with both math and machine-learning algorithms! I am currently a member of the Automatic Coordination of Teams (ACT) Lab working on discontinuity based multi-agent path findind (db-MAPF). </h3>
 
+<p> I'm currently learning RL with David Silver and investigating topics of game theory. </p>
+
+<p> Projects I've done </p>
+1. (Ongoing) Pipelining natural language to multi-robot task allocation. Command a team of robots to do a sequence of tasks is hard, we investigate both direct commanding and human-robot collaboration in this project. For example, "do A and do B but not before you do C. I will do D first." We have made significant improvement in accuracy by fine-tuning LLM on natural language to linear temporal logic translation and then carry out the task using LTL commands. The current write-up can be viewed here.
 
 <!--
 **Arnie-He/Arnie-He** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
