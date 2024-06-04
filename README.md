@@ -3,16 +3,8 @@
 <h3 align = 'center'> I am an undergraduate student and a member of the E-GLAMOR group at Brown University advised by Professor Amy Greenwald and Chen Sun. My interest lies in the intersection of games, learning, and optimization. </h3>
 
 <h5> Projects I've done: </h5>
-1. TOLD-ZERO: TDMPC-2 is a model-based reinforcement learn-
-ing algorithm on continuous action control. In this
-work we present TOLD-ZERO, a generalization
-of the original paper that specializes in discrete
-action tasks and uses Monte-Carlo Tree Search as
-a local trajectory optimization method. We 
-try to argue the role of planning in model-based
-RL in both continuous and discrete action tasks,
-specifically by bench-marking algorithms with or
-without planning on the LightZero Environment. The complete report could be found inside my TOLD-ZERO repo.
+
+1. TOLD-ZERO: TDMPC-2 is a model-based reinforcement learning algorithm on continuous action control. In this work we present TOLD-ZERO, a generalization of the original paper that specializes in discrete action tasks and uses Monte-Carlo Tree Search as a local trajectory optimization method. We try to argue the role of planning in model-based RL in both continuous and discrete action tasks, specifically by bench-marking algorithms with or without planning on the LightZero Environment. The complete report could be found inside my TOLD-ZERO repo.
 
 2. Pipelining natural language to multi-robot task allocation. Commanding a team of robots to do a sequence of tasks is hard, so we utilized a middle layer of logic to investigate both direct commanding and human-robot collaboration in this project. For example, a command could look like "do A and do B but not before you do C. I will do D first." We have significantly improved success rate by fine-tuning an LLM on natural language to linear temporal logic translation and then carrying out the task using LTL commands. The current write-up can be viewed here.
 
