@@ -1,14 +1,14 @@
 <h2 align="center">Hi, this is Naicheng He (Arnie)</h2>
 
-<h3 align="center">I'm currently an undergraduate Math-CS major at Brown University, where I was fortunately advised by the wonderful Professors Amy Greenwald and Chen Sun. My interest lies on the intersection of games, learning, and multi-agent interactions.</h3>
+<h3 align="center"> I am an undergraduate student majoring in Math-CS at Brown University, where I was fortunately advised by Professor Amy Greenwald and Chen Sun. My interest lies in the intersection of games, learning, and multi-agent interactions.</h3>
 
 <h4>Selected Projects:</h4>
-
+ 
 <ol>
-    <li><strong>TOLD-ZERO</strong> - This project extends the TDMPC-2, a model-based reinforcement learning algorithm, to discrete action tasks. Our innovation, TOLD-ZERO, integrates Monte-Carlo Tree Search for trajectory optimization in discrete action settings. We explore the impact of planning in model-based RL through comparative analyses in the LightZero Environment. The detailed report is available in the TOLD-ZERO repository.</li>
+    <li><strong>TOLD-ZERO</strong> -  TDMPC-2 is a model-based reinforcement learning algorithm on continuous action control. In this work we present TOLD-ZERO, a generalization of the original paper that specializes in discrete action tasks and uses Monte-Carlo Tree Search as a local trajectory optimization method. We try to argue the role of planning in model-based RL in both continuous and discrete action tasks, specifically by bench-marking algorithms with or without planning on the LightZero Environment. The complete report could be found inside the TOLD-ZERO repo.</li>
 </ol>
 <ol>
-    <li><strong>Pipelining Natural Language to Multi-Robot Task Allocation</strong> - This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into linear temporal logic, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between humans and robots. The project write-up is accessible <a href="https://github.com/Arnie-He/MultiLang2LTL/blob/main/CSCI_2951_Final_Project___Arnie_Yichen.pdf">here</a>.</li>
+    <li><strong> Pipelining natural language to multi-robot task allocation. Commanding a team of robots to do a sequence of tasks is hard, so we utilized a middle layer of logic to investigate both direct commanding and human-robot collaboration in this project. For example, a command could look like "do A and do B but not before you do C. I will do D first." We have significantly improved success rate by fine-tuning an LLM on natural language to linear temporal logic translation and then carrying out the task using LTL commands. The current write-up can be viewed <a href="https://github.com/Arnie-He/MultiLang2LTL/blob/main/CSCI_2951_Final_Project___Arnie_Yichen.pdf">here</a>.</li>
 </ol>
 
 <!--
