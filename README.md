@@ -1,18 +1,19 @@
-<h2 align = 'center'> Hi, this is Naicheng He(Arnie) </h2>
+<h2 align="center">Hi, I'm Naicheng He (Arnie)</h2>
 
-<h3 align = 'center'> I am an undergraduate student and a member of the E-GLAMOR group at Brown University advised by Professor Amy Greenwald and Chen Sun. My interest lies in the intersection of games, learning, and multi-agent interactions. </h3>
+<h3 align="center">As an undergraduate Math-CS major at Brown University, I'm fortunate to be advised by Professors Amy Greenwald and Chen Sun. My research focuses on the confluence of games, learning, and multi-agent interactions.</h3>
 
-<h5> Projects I've done: </h5>
+<h4>Highlighted Projects:</h4>
 
-1. TOLD-ZERO: TDMPC-2 is a model-based reinforcement learning algorithm on continuous action control. In this work we present TOLD-ZERO, a generalization of the original paper that specializes in discrete action tasks and uses Monte-Carlo Tree Search as a local trajectory optimization method. We try to argue the role of planning in model-based RL in both continuous and discrete action tasks, specifically by bench-marking algorithms with or without planning on the LightZero Environment. The complete report could be found inside the TOLD-ZERO repo.
-
-2. Pipelining natural language to multi-robot task allocation. Commanding a team of robots to do a sequence of tasks is hard, so we utilized a middle layer of logic to investigate both direct commanding and human-robot collaboration in this project. For example, a command could look like "do A and do B but not before you do C. I will do D first." We have significantly improved success rate by fine-tuning an LLM on natural language to linear temporal logic translation and then carrying out the task using LTL commands. The current write-up can be viewed here.
+<ol>
+    <li><b>TOLD-ZERO</b> - This project extends the TDMPC-2, a model-based reinforcement learning algorithm, to discrete action tasks. Our innovation, TOLD-ZERO, integrates Monte-Carlo Tree Search for trajectory optimization in discrete action settings. We explore the impact of planning in model-based RL through comparative analyses in the LightZero Environment. The detailed report is available in the TOLD-ZERO repository.</li>
+    
+    <li><b>Pipelining Natural Language to Multi-Robot Task Allocation</b> - This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into linear temporal logic, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between humans and robots. The project write-up is accessible <a href="URL_to_the_write-up">here</a>.</li>
+</ol>
 
 <!--
 **Arnie-He/Arnie-He** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
-
+You can include optional sections below if needed:
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
