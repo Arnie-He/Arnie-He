@@ -1,6 +1,6 @@
 <h2 align="center">Hi, this is Naicheng He (Arnie)</h2>
 
-<h3 align="center">I'm currently an undergraduate Math-CS major at Brown University, where I was fortunately advised by the wonderful Professors Amy Greenwald and Chen Sun. My interest lies on the inter sections of games, learning, and multi-agent interactions.</h3>
+<h3 align="center">I'm currently an undergraduate Math-CS major at Brown University, where I was fortunately advised by the wonderful Professors Amy Greenwald and Chen Sun. My interest lies on the intersection of games, learning, and multi-agent interactions.</h3>
 
 <h4>Selected Projects:</h4>
 
