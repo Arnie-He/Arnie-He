@@ -7,7 +7,7 @@
 <ol>
     <li><b>TOLD-ZERO</b> - This project extends the TDMPC-2, a model-based reinforcement learning algorithm, to discrete action tasks. Our innovation, TOLD-ZERO, integrates Monte-Carlo Tree Search for trajectory optimization in discrete action settings. We explore the impact of planning in model-based RL through comparative analyses in the LightZero Environment. The detailed report is available in the TOLD-ZERO repository.</li>
     
-    <li><b>Pipelining Natural Language to Multi-Robot Task Allocation</b> - This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into linear temporal logic, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between humans and robots. The project write-up is accessible <a href="URL_to_the_write-up">here</a>.</li>
+    <li><b>Pipelining Natural Language to Multi-Robot Task Allocation</b> - This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into linear temporal logic, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between humans and robots. The project write-up is accessible <a href="[URL_to_the_write-up](https://github.com/Arnie-He/MultiLang2LTL/blob/main/CSCI_2951_Final_Project___Arnie_Yichen.pdf)">here</a>.</li>
 </ol>
 
 <!--
