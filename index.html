@@ -6,18 +6,126 @@
     <title>My Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1 {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
             color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .content_container{
+            display:flex;
+            justify-content: center;
+            width: 70%;
+        }
+        .content {
+            width: 60%;
+            padding: 20px;
+            text-align: left;
+        }
+        .sidebar_container {
+            width: 30%;
+            justify-content: center;
+            display: flex;
+        }
+        .sidebar {
+            width: 60%;
+            max-width: 350px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .sidebar h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .sidebar p {
+            margin: 5px 0;
+        }
+        .sidebar .icons a {
+            margin: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+        .intro h1, .projects h1 {
+            margin-top: 0;
+        }
+        .intro p, .projects ul {
+            line-height: 1.6;
+        }
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .projects li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website</h1>
-    <p>Hello, I'm [Your Name]. This is my personal website.</p>
+    <div class="navbar">
+        <div>My Website</div>
+        <div>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content_container">
+            <div class="content">
+                <div class="intro" id="about">
+                    <h1>About Me</h1>
+                    <p>Hi, this is Naicheng He (Arnie). I am an undergraduate student majoring in Math-CS at Brown University, 
+                    where I was fortunately advised by <a href="https://vivo.brown.edu/display/amy_greenwald" target="_blank">Professor Amy Greenwald</a> and 
+                    <a href="https://scholar.google.com/citations?user=b8_s_lYAAAAJ" target="_blank">Chen Sun</a>. My interest lies in the intersection of games, learning, and multi-agent interactions.</p>
+                </div>
+                <div class="projects" id="projects">
+                    <h1>Highlighted Projects</h1>
+                    <ul>
+                        <li>Project 1 - Description</li>
+                        <li>Project 2 - Description</li>
+                        <li>Project 3 - Description</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "sidebar_container"> 
+            <div class="sidebar">
+                <img src="Profile_2.jpg" alt="Profile">
+                <h2>Arnie He</h2>
+                <p>Email: arnie_he@brown.edu</p>
+                <p>Phone: (401) 259-4372</p>
+                <div class="icons">
+                    <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
