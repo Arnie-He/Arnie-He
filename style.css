@@ -126,3 +126,9 @@ body {
 .project-link a:hover {
     text-decoration: underline;
 }
+
+.author {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
