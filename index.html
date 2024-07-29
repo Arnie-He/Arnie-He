@@ -4,12 +4,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Arnie He</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="navbar">
-        <div>My Website</div>
+        <div>Naicheng He(Arnie)</div>
         <div>
             <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
@@ -21,35 +21,66 @@
             <div class="intro" id="about">
                 <h1>About me</h1>
                 <p>
-                    Hi, this is Naicheng He (Arnie). I'm an undergraduate student pursuing a degree in Computer Science and Mathematics at Brown University, 
+                    I'm an undergraduate student pursuing degrees in Computer Science and Mathematics at Brown University, 
                     where I was fortunately advised by <a href="https://scholar.google.com/citations?user=aQCRuYQAAAAJ&hl=en" target="_blank">Professor Amy Greenwald</a> and 
-                    <a href="https://chensun.me/index.html" target="_blank">Chen Sun</a>. My research interest lies in the intersection of games, learning, and multi-agent interactions and I'm actively 
-                     learning in the fields. </p>
-                <p>
-                    During my time at Brown, I received an Undergraduate Teaching and Research Awards, and I was also ranked 2nd place in the In The International Automated Negotiation Agents Competition's Supply Chain Management League. 
-                    Besides school and research, I have a strong passion for teaching as well. I appreciate the opportunity given by Professor Ritambbara Singh to be a part of the Teaching Assistant Staff for Deep Learning.
+                    <a href="https://chensun.me/index.html" target="_blank">Chen Sun</a>. I have interests for a variety of topics, currently I'm devoted to research in games, learning, and multi-agent interactions.
                 </p>
                 <p>
-                    Other than CS, I'm also interested in theatre works and movies. My favorite play is 'Angels in America' and I've been writing since high school.
+                    During my time at Brown, I received an <u>Undergraduate Teaching and Research Awards</u>, and I was ranked <u>2nd place</u> in the <u>International Automated Negotiation Agents Competition's Supply Chain Management League</u>. 
+                    Besides school and research, I have a strong passion for teaching as well. I appreciate the opportunity given by Professor Ritambbara Singh to be a part of the <u>teaching assistant</u> staff for Deep Learning.
+                </p>
+                <p>
+                    Other than Computer Science, I'm also interested in <u>theatre works</u> and movies. My favorite play is 'Angels in America' and I've been writing since high school.
                 </p>
             </div>
+
+            <div class="News" id="News">
+                <h2>News</h2>
+                <p>During the summer, I'm employed by Professor Amy Greenwald to work on the intersection of <a href="https://en.wikipedia.org/wiki/Stackelberg_competition" target="_blank">Stackelberg games</a> and reinforcement learning algorithms. I'm gaining 
+                experience in implicit function differentiation, bi-level optimization, and I'm building a reinforcement learning baseline repo for future comparison.</p>
+            </div>
+             
             <div class="projects" id="projects">
-                <h1>Selected Projects</h1>
+                <h2>Selected Projects</h2>
+                <div class="project">
+                    <img src="utra-video-2.gif" alt="Project 2 Image">
+                    <div class="project-description">
+                        <h3>Experimental testing and analysis of aerodynamic interactions between quadrotors</h3>
+                        <p>Over the course of the semester, I supported a graduate student in gathering data from flight experiments involving quadrotors traversing each other. These experiments included both static setups, where drones were tethered as they traversed each other, and dynamic, free-flight experiments conducted in the laboratory. 
+                            I had the opportunity to learn about quadrotor hardware through hands-on experiments and integrated it with external localization systems for indoor flight. 
+                            Working collaboratively, I contributed to the development of these experiments and played a role in setting up and testing drones in close-proximity flight.</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="https://github.com/Arnie-He/ACTLab-Crazyswarm/tree/master/ros_ws/src/crazyswarm/scripts" target="_blank">View Scripts</a>
+                    </div>
+                </div>
                 <div class="project">
                     <img src="told_zero.jpg" alt="Project 1 Image">
                     <div class="project-description">
-                        <h2>TOLD-ZERO</h2>
-                        <p>TDMPC-2 is a model-based reinforcement learning algorithm on continuous action control. In this work we present TOLD-ZERO, a generalization of the original paper that specializes in discrete action tasks and uses Monte-Carlo Tree Search as a local trajectory optimization method. We try to argue the role of planning in model-based RL in both continuous and discrete action tasks, specifically by benchmarking algorithms with or without planning on the LightZero Environment. </p>
+                        <h3>TOLD-ZERO</h3>
+                        <p>TDMPC-2 is a model-based reinforcement learning algorithm on continuous action control. In this work we present TOLD-ZERO, a generalization of the TDMPC paper that specializes in discrete action tasks and uses <u>Monte-Carlo Tree Search</u> as a local trajectory optimization method. We also try to argue <u>the role of planning</u> in model-based RL in both continuous and discrete action tasks, specifically by benchmarking algorithms with or without planning on the LightZero Environment. </p>
                     </div>
                     <div class="project-link">
                         <a href="Told_Zero-1.pdf" target="_blank">View Writeup</a>
                     </div>
                 </div>
                 <div class="project">
+                    <img src="american-money-lincoln-union-shield-260nw-1708462996.webp" alt="Project 1 Image">
+                    <div class="project-description">
+                        <h3>Matching Pennis(An Negotiation Agent Submitted to SCML 2024)</h3>
+                        <p> The MatchingPennies Agent employs concurrent negotiation and a heuristic function to
+                            identify the most profitable subsets of current offers in a setting of multi-agent negotiation provided by <a href="https://pypi.org/project/negmas/" target="_blank">negmas</a>. 
+                            The ability to balance between fulfilling the desired quantities and negoatiating for the best price gives its name. The agent won the 2nd place in the <a href="https://scml.cs.brown.edu/scml2024" target="_blank">SCML2024 one-shot track.</a> </p>
+                    </div>
+                    <div class="project-link">
+                        <a href="scml_2024_report.pdf" target="_blank">View Report</a>
+                    </div>
+                </div>
+                <div class="project">
                     <img src="case1.gif" alt="Project 2 Image">
                     <div class="project-description">
-                        <h2>Pipelining Natural Language to Multi-Robot Task Allocation</h2>
-                        <p>This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into linear temporal logic, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between humans and teams of robots.</p>
+                        <h3>Pipelining Natural Language to Multi-Robot Task Allocation</h3>
+                        <p>This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into <u>linear temporal logic(LTL)</u>, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between <u>human</u> and <u>teams of robots.</u></p>
                     </div>
                     <div class="project-link">
                         <a href="CSCI_2951_Final_Project___Arnie_Yichen.pdf" target="_blank">View Writeup</a>
@@ -60,8 +91,7 @@
         
         <div class="sidebar">
             <img src="Profile_2.jpg" alt="Profile">
-            <h2>Arnie He</h2>
-            <p>email: arnie_he@brown.edu</p>
+            <p id="Contact">email: arnie_he@brown.edu</p>
             <div class="icon_container">
                 <p>
                     <a href="https://github.com/Arnie-He" target="_blank">

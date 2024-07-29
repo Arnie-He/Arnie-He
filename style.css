@@ -22,19 +22,19 @@ body {
     display: flex;
     margin: 20px;
     gap: 20px;
-    align-items: center;
-    margin-left: 10%;
+    align-items: start;
+    margin-left: 30%;
 }
 .content {
-    width: 70%;
+    width: 55%;
     padding: 20px;
     align-items: center;
 }
 .sidebar {
-    width: 15%;
+    width: 18%;
     padding: 20px;
+    margin-top: 3%;
     margin-left: 7%;
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@ body {
     text-decoration: none;
     color: #333;
 }
-.intro h1, .projects h1 {
+.intro h1{
     margin-top: 0;
 }
 .intro p, .projects ul {
@@ -98,6 +98,13 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+}
+.News h2{
+    margin-top: 5%;
+}
+.projects h2{
+    margin-top: 8%;
+    margin-bottom: 0;
 }
 .project img, .project video {
     width: 150px;
