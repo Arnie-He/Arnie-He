@@ -1,0 +1,121 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    align-items: center;
+    margin-left: 10%;
+}
+.content {
+    width: 70%;
+    padding: 20px;
+    align-items: center;
+}
+.sidebar {
+    width: 15%;
+    padding: 20px;
+    margin-left: 7%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.sidebar h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+.sidebar p {
+    margin: 5px 0;
+}
+.sidebar .icons a {
+    margin: 5px;
+    text-decoration: none;
+    color: #333;
+}
+.intro h1, .projects h1 {
+    margin-top: 0;
+}
+.intro p, .projects ul {
+    line-height: 1.6;
+}
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+.projects li {
+    margin-bottom: 10px;
+}
+.icon_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.icon_container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.icon_container i {
+    margin-right: 8px;
+    color: #0077b5;
+}
+.icon_container a:hover i {
+    color: #005582;
+}
+.icon_container a:hover {
+    text-decoration: underline;
+}
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.project img, .project video {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    object-fit: cover;
+}
+.project-description {
+    flex: 1;
+}
+.project-link {
+    text-align: right;
+}
+.project-link a {
+    text-decoration: none;
+    color: #0077b5;
+}
+.project-link a:hover {
+    text-decoration: underline;
+}

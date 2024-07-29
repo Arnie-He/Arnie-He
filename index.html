@@ -1,89 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fafafa;
-            color: #333;
-        }
-        .navbar {
-            background-color: #333;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #fff;
-        }
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-        .container {
-            display: flex;
-            margin: 20px;
-        }
-        .content_container{
-            display:flex;
-            justify-content: center;
-            width: 70%;
-        }
-        .content {
-            width: 60%;
-            padding: 20px;
-            text-align: left;
-        }
-        .sidebar_container {
-            width: 30%;
-            justify-content: center;
-            display: flex;
-        }
-        .sidebar {
-            width: 60%;
-            max-width: 350px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .sidebar img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-        .sidebar h2 {
-            margin: 10px 0;
-            font-size: 1.5em;
-        }
-        .sidebar p {
-            margin: 5px 0;
-        }
-        .sidebar .icons a {
-            margin: 5px;
-            text-decoration: none;
-            color: #333;
-        }
-        .intro h1, .projects h1 {
-            margin-top: 0;
-        }
-        .intro p, .projects ul {
-            line-height: 1.6;
-        }
-        .projects ul {
-            list-style: none;
-            padding: 0;
-        }
-        .projects li {
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="navbar">
@@ -95,34 +17,62 @@
         </div>
     </div>
     <div class="container">
-        <div class="content_container">
-            <div class="content">
-                <div class="intro" id="about">
-                    <h1>About Me</h1>
-                    <p>Hi, this is Naicheng He (Arnie). I am an undergraduate student majoring in Math-CS at Brown University, 
-                    where I was fortunately advised by <a href="https://vivo.brown.edu/display/amy_greenwald" target="_blank">Professor Amy Greenwald</a> and 
-                    <a href="https://scholar.google.com/citations?user=b8_s_lYAAAAJ" target="_blank">Chen Sun</a>. My interest lies in the intersection of games, learning, and multi-agent interactions.</p>
+        <div class="content">
+            <div class="intro" id="about">
+                <h1>About me</h1>
+                <p>
+                    Hi, this is Naicheng He (Arnie). I'm an undergraduate student pursuing a degree in Computer Science and Mathematics at Brown University, 
+                    where I was fortunately advised by <a href="https://scholar.google.com/citations?user=aQCRuYQAAAAJ&hl=en" target="_blank">Professor Amy Greenwald</a> and 
+                    <a href="https://chensun.me/index.html" target="_blank">Chen Sun</a>. My research interest lies in the intersection of games, learning, and multi-agent interactions and I'm actively 
+                     learning in the fields. </p>
+                <p>
+                    During my time at Brown, I received an Undergraduate Teaching and Research Awards, and I was also ranked 2nd place in the In The International Automated Negotiation Agents Competition's Supply Chain Management League. 
+                    Besides school and research, I have a strong passion for teaching as well. I appreciate the opportunity given by Professor Ritambbara Singh to be a part of the Teaching Assistant Staff for Deep Learning.
+                </p>
+                <p>
+                    Other than CS, I'm also interested in theatre works and movies. My favorite play is 'Angels in America' and I've been writing since high school.
+                </p>
+            </div>
+            <div class="projects" id="projects">
+                <h1>Selected Projects</h1>
+                <div class="project">
+                    <img src="told_zero.jpg" alt="Project 1 Image">
+                    <div class="project-description">
+                        <h2>TOLD-ZERO</h2>
+                        <p>TDMPC-2 is a model-based reinforcement learning algorithm on continuous action control. In this work we present TOLD-ZERO, a generalization of the original paper that specializes in discrete action tasks and uses Monte-Carlo Tree Search as a local trajectory optimization method. We try to argue the role of planning in model-based RL in both continuous and discrete action tasks, specifically by benchmarking algorithms with or without planning on the LightZero Environment. </p>
+                    </div>
+                    <div class="project-link">
+                        <a href="Told_Zero-1.pdf" target="_blank">View Writeup</a>
+                    </div>
                 </div>
-                <div class="projects" id="projects">
-                    <h1>Highlighted Projects</h1>
-                    <ul>
-                        <li>Project 1 - Description</li>
-                        <li>Project 2 - Description</li>
-                        <li>Project 3 - Description</li>
-                    </ul>
+                <div class="project">
+                    <img src="case1.gif" alt="Project 2 Image">
+                    <div class="project-description">
+                        <h2>Pipelining Natural Language to Multi-Robot Task Allocation</h2>
+                        <p>This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into linear temporal logic, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between humans and teams of robots.</p>
+                    </div>
+                    <div class="project-link">
+                        <a href="CSCI_2951_Final_Project___Arnie_Yichen.pdf" target="_blank">View Writeup</a>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class = "sidebar_container"> 
-            <div class="sidebar">
-                <img src="Profile_2.jpg" alt="Profile">
-                <h2>Arnie He</h2>
-                <p>Email: arnie_he@brown.edu</p>
-                <div class="icons">
-                    <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-                </div>
+        <div class="sidebar">
+            <img src="Profile_2.jpg" alt="Profile">
+            <h2>Arnie He</h2>
+            <p>email: arnie_he@brown.edu</p>
+            <div class="icon_container">
+                <p>
+                    <a href="https://github.com/Arnie-He" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/arniehe/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </p>
             </div>
         </div>
     </div>
