@@ -4,10 +4,12 @@ body {
     padding: 0;
     background-color: #fafafa;
     color: #333;
+    font-size: 15px;
+    line-height: 1.4;
 }
 .navbar {
     background-color: #333;
-    padding-left: 31%;
+    padding-left: 16%;
     display: flex;
     align-items: center;
     color: #fff;
@@ -19,49 +21,72 @@ body {
     margin-left: 60px;
 }
 .container {
-    display: flex;
-    margin: 20px;
-    gap: 20px;
-    align-items: start;
-    margin-left: 30%;
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 0 15px;
 }
 .content {
-    width: 55%;
-    padding: 20px;
-    align-items: center;
-}
-.sidebar {
-    width: 18%;
-    padding: 20px;
-    margin-top: 3%;
-    margin-left: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sidebar img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    padding: 15px 0;
 }
-.sidebar h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
+/* New intro section layout */
+.intro-section {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 25px;
 }
-.sidebar p {
-    margin: 5px 0;
+
+.intro-content {
+    flex: 1;
 }
-.sidebar .icons a {
-    margin: 5px;
+
+.intro-content p {
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links p {
+    margin: 0;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #333;
+    color: inherit;
 }
-.intro h1{
-    margin-top: 0;
+
+.social-links i {
+    margin-right: 8px;
+    color: #0077b5;
 }
-.intro p, .projects ul {
-    line-height: 1.6;
+
+.social-links a:hover i {
+    color: #005582;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.profile-photo {
+    flex-shrink: 0;
+}
+
+.profile-photo img {
+    width: 160px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .projects ul {
     list-style: none;
@@ -69,30 +94,6 @@ body {
 }
 .projects li {
     margin-bottom: 10px;
-}
-.icon_container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 1.2em;
-    margin-top: 20px;
-}
-.icon_container a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-}
-.icon_container i {
-    margin-right: 8px;
-    color: #0077b5;
-}
-.icon_container a:hover i {
-    color: #005582;
-}
-.icon_container a:hover {
-    text-decoration: underline;
 }
 .project {
     display: flex;
@@ -127,10 +128,79 @@ body {
     text-decoration: underline;
 }
 
+/* Research and Teaching Items */
+.research-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.research-item:last-child {
+    border-bottom: none;
+}
+
+.research-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.0em;
+    color: #0077b5;
+    font-weight: 600;
+}
+
+.research-item p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+/* Status/venue line styling */
+.research-item p:not(.author):first-of-type {
+    color: #666;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+/* Main description text */
+.research-item p:last-of-type {
+    color: #444;
+    text-align: justify;
+}
+
 .author {
     font-style: italic;
-    color: #555;
-    margin-top: 10px;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+/* Section spacing */
+.Research, .teaching, .projects {
+    margin-bottom: 25px;
+}
+
+.Research h2, .teaching h2, .projects h2 {
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-size: 1.3em;
+}
+
+/* Simple TA list */
+.ta-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ta-list li {
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 13px;
+}
+
+.ta-list li:last-child {
+    border-bottom: none;
 }
 
 @media (max-width: 1200px) {
@@ -148,13 +218,23 @@ body {
     }
 
     .container {
-        flex-direction: column;
         margin: 10px;
+        padding: 0 10px;
     }
 
-    .content, .sidebar {
+    .content {
         width: 100%;
-        padding: 10px;
+        padding: 10px 0;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-photo img {
+        width: 150px;
+        align-self: center;
     }
 
     .project {

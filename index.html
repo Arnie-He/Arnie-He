@@ -11,102 +11,96 @@
     <div class="navbar">
         <h3>Naicheng He(Arnie)</h3>
         <div>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#Research">Research</a>
+            <a href="#teaching">TA</a>
+            <a href="projects.html">Projects</a>
         </div>
     </div>
     <div class="container">
         <div class="content">
-            <div class="intro" id="about">
-                <h1>About me</h1>
-                <p>
-                    I'm an undergraduate student pursuing degrees in Computer Science and Mathematics at Brown University, 
-                    where I was fortunately advised by <a href="https://scholar.google.com/citations?user=aQCRuYQAAAAJ&hl=en" target="_blank">Professor Amy Greenwald</a> and 
-                    <a href="https://chensun.me/index.html" target="_blank">Chen Sun</a>. I have interests for a variety of topics, currently I'm devoted to research in games, learning, and multi-agent interactions.
-                </p>
-                <p>
-                    During my time at Brown, I received an <u>Undergraduate Teaching and Research Awards</u>, and I was ranked <u>2nd place</u> in the <u>International Automated Negotiation Agents Competition's Supply Chain Management League</u>. 
-                    Besides school and research, I have a strong passion for teaching as well. I appreciate the opportunity given by Professor Ritambbara Singh to be a part of the <u>teaching assistant</u> staff for Deep Learning.
-                </p>
-                <p>
-                    Other than Computer Science, I'm also interested in <u>theatre works</u> and movies. My favorite play is 'Angels in America' and I've been writing since high school.
+            <div class="intro-section" id="about">
+                <div class="intro-content">
+                    <p>
+                        I'm a 4th-year undergraduate student pursuing degrees in Computer Science and Mathematics at Brown University, 
+                        where I do research advised by <a href="https://scholar.google.com/citations?user=aQCRuYQAAAAJ&hl=en" target="_blank">Professor Amy Greenwald</a> and 
+                        <a href="https://cs.brown.edu/people/gdk/" target="_blank">Professor George Konidaris</a>.
+                        
+                        My main research interest lies in automated decision making systems with a focus on reinforcement learning and multi-agent interactions.
+                        # start a new paragraph and leave an empty line
+        
+                        <br>
+                        Outside of research, I enjoy any competitive sports like tennis and soccer. I also enjoy strategy games like go and the civilization series.
+                    </p>
+                    <div class="social-links">
+                        <p>
+                            <a href="https://github.com/Arnie-He" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/arniehe/" target="_blank">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </p>
+                        <p id="contact">email: arnie_he@brown.edu</p>
+                    </div>
+                </div>
+                <div class="profile-photo">
+                    <img src="Profile_2.jpg" alt="Profile">
+                </div>
+            </div>
+
+            <!-- <div class="News" id="News">
+                <h2>News</h2>
+                <p></p>
+            </div> -->
+            <div class="Research" id="Research">
+                <h2>Research</h2>
+                <div class="research-item">
+                    <h3>Inverse Reinforcement Learning on GPUDrive</h3>
+                    <p><em>In progress</em> - NYRL workshop 2025</p>
+                    <p class="author"><strong>Naicheng He</strong>, Arjun Prakash, Gokul Swamy, Amy Greenwald, Eugene Vinitsky</p>
+                    <p>We explore the use of inverse reinforcement learning (IRL) to develop robust driving policies in GPUDrive. 
+                        Using demonstrations from either human experts or PPO-trained agents, 
+                        we investigate GAIL-style approaches with PPO as inner-loop optimizers, 
+                        and discriminators trained on egocentric observations or observation-action pairs. 
+                        Our experiments span 75 worlds with varying numbers of controlled agents and we investigated the difficulty of scaling IRL from single-agent to
+                         multi-agent environments. We evaluate policies using task-relevant metrics such as off-road counts, 
+                         collisions, goal-reaching rates, and hand-crafted episodic returns. 
+                         These early results raise intriguing questions about reward generalization, scalability, 
+                         and the design of efficient algorithms for multi-agent autonomy.</p>
+                </div>
+                <div class="research-item">
+                    <h3>Mitigating Loss of Plasticity by Preventing Hessian Spectral Collapse</h3>
+                    <p><em>Under review</em> - Neurips ARLET workshop 2025</p>
+                    <p class="author"><strong>Naicheng He*</strong>, Kaicheng Guo*, Arjun Prakash*, Saket Tiwari, Tyrone Serapio, Ruo Yu Tao, Amy Greenwald, George Konidaris</p>
+                    <p>Deep neural networks suffer from the loss of plasticity, gradually losing their ability to adapt to new tasks. We identify the root cause of this phenomenon as the Hessian spectral collapse, 
+                        where meaningful curvature directions vanish and optimization becomes ineffective. 
+                        We conduct extensive experiments to find that spectral collapse perfectly aligns with the onset of plasticity loss. 
+                        To explain this, we introduce the notion of τ-trainability, which unifies prior indicators and provides a principled characterization of plasticity. 
+                        Building on this framework, we discuss the Kroner factored approximation which motivates two regularization choices: preserving the effective feature rank and applying 
+                        L2 penalties, both of which directly counteract spectral collapse. 
+                        Experiments on continual supervised and reinforcement learning tasks confirm that this theoretically motivated strategy effectively preserves plasticity for deep neural networks.</p>
+                </div>
+                <div class="research-item">
+                    <h3>Bi-Level Policy Optimization with Nyström Hypergradients</h3>
+                    <p><em>Under review</em> - <a href="https://arxiv.org/abs/2505.11714" target="_blank">arXiv</a></p>
+                    <p class="author">Arjun Prakash*, <strong>Naicheng He*</strong>, Denizalp Goktas, Amy Greenwald</p>
+                    <p>The dependency of the actor on the critic in actor-critic (AC) reinforcement learning means that AC can be characterized as a bilevel optimization (BLO) problem, also called a Stackelberg game. This characterization motivates two modifications to vanilla AC algorithms. First, the critic's update should be nested to learn a best response to the actor's policy. Second, the actor should update according to a hypergradient that takes changes in the critic's behavior into account. Computing this hypergradient involves finding an inverse Hessian vector product, a process that can be numerically unstable. We thus propose a new algorithm, Bilevel Policy Optimization with Nyström Hypergradients (BLPO), which uses nesting to account for the nested structure of BLO, and leverages the Nyström method to compute the hypergradient. Theoretically, we prove BLPO converges to (a point that satisfies the necessary conditions for) a local strong Stackelberg equilibrium in polynomial time with high probability, assuming a linear parametrization of the critic's objective. Empirically, we demonstrate that BLPO performs on par with or better than PPO on a variety of discrete and continuous control tasks.
+
+                    </p>
+                </div>
+                <p style="text-align: right; margin-top: 15px;">
+                    <a href="projects.html" style="color: #0077b5; text-decoration: none; font-size: 13px;">→ View Selected Projects</a>
                 </p>
             </div>
 
-            <div class="News" id="News">
-                <h2>News</h2>
-                <p>Summer 2024, I'm employed by Professor Amy Greenwald to work on the intersection of <a href="https://en.wikipedia.org/wiki/Stackelberg_competition" target="_blank">Stackelberg games</a> and reinforcement learning algorithms. I'm gaining 
-                experience in implicit function differentiation, bi-level optimization, and I'm building a reinforcement learning baseline repo for future comparison.</p>
-            </div>
-             
-            <div class="projects" id="projects">
-                <h2>Selected Projects</h2>
-                <div class="project">
-                    <img src="utra-video-2.gif" alt="Project 2 Image">
-                    <div class="project-description">
-                        <h3>Experimental testing and analysis of aerodynamic interactions between quadrotors</h3>
-                        <p class="author">Naicheng He</p>
-                        <p>Over the course of the semester, I supported a graduate student in gathering data from flight experiments involving quadrotors traversing each other. These experiments included both static setups, where drones were tethered as they traversed each other, and dynamic, free-flight experiments conducted in the laboratory. 
-                            I had the opportunity to learn about quadrotor hardware through hands-on experiments and integrated it with external localization systems for indoor flight. 
-                            Working collaboratively, I contributed to the development of these experiments and played a role in setting up and testing drones in close-proximity flight.</p>
-                    </div>
-                    <div class="project-link">
-                        <a href="https://github.com/Arnie-He/ACTLab-Crazyswarm/tree/master/ros_ws/src/crazyswarm/scripts" target="_blank">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="told_zero.jpg" alt="Project 1 Image">
-                    <div class="project-description">
-                        <h3>TOLD-ZERO</h3>
-                        <p class="author">Naicheng He, Kaicheng Guo, Wanjia Fu</p>
-                        <p>TDMPC-2 is a model-based reinforcement learning algorithm on continuous action control. In this work we present TOLD-ZERO, a generalization of the TDMPC paper that specializes in discrete action tasks and uses <u>Monte-Carlo Tree Search</u> as a local trajectory optimization method. We also try to argue <u>the role of planning</u> in model-based RL in both continuous and discrete action tasks, specifically by benchmarking algorithms with or without planning on the LightZero Environment. </p>
-                    </div>
-                    <div class="project-link">
-                        <a href="Told_Zero-1.pdf" target="_blank">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="american-money-lincoln-union-shield-260nw-1708462996.webp" alt="Project 1 Image">
-                    <div class="project-description">
-                        <h3>Matching Pennis(An Negotiation Agent Submitted to SCML 2024)</h3>
-                        <p class="author">Naicheng He, Akash Singirikonda, Amy Greenwald</p>
-                        <p> The MatchingPennies Agent employs concurrent negotiation and a heuristic function to
-                            identify the most profitable subsets of current offers in a setting of multi-agent negotiation provided by <a href="https://pypi.org/project/negmas/" target="_blank">negmas</a>. 
-                            The ability to balance between fulfilling the desired quantities and negoatiating for the best price gives its name. The agent won the 2nd place in the <a href="https://scml.cs.brown.edu/scml2024" target="_blank">SCML2024 one-shot track.</a> </p>
-                    </div>
-                    <div class="project-link">
-                        <a href="scml_2024_report.pdf" target="_blank">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="case1.gif" alt="Project 2 Image">
-                    <div class="project-description">
-                        <h3>Pipelining Natural Language to Multi-Robot Task Allocation</h3>
-                        <p class="author">Yichen Wei, Naicheng He</p>
-                        <p>This initiative aims to simplify commanding a team of robots through a logical intermediary. By translating natural language commands into <u>linear temporal logic(LTL)</u>, we've enhanced the success rate of task execution. The approach supports complex commands and collaborative tasks between <u>human</u> and <u>teams of robots.</u></p>
-                    </div>
-                    <div class="project-link">
-                        <a href="CSCI_2951_Final_Project___Arnie_Yichen.pdf" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="sidebar">
-            <img src="Profile_2.jpg" alt="Profile">
-            <p id="Contact">email: arnie_he@brown.edu</p>
-            <div class="icon_container">
-                <p>
-                    <a href="https://github.com/Arnie-He" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/arniehe/" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </p>
+            <div class="teaching" id="teaching">
+                <h2>TA Experience</h2>
+                <ul class="ta-list">
+                    <li>CSCI 1470: Deep Learning (Fall 2023)</li>
+                    <li>CSCI 1440: Algorithmic Game Theory (Spring 2024)</li>
+                </ul>
             </div>
         </div>
     </div>
