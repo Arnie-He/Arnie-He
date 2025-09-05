@@ -8,8 +8,8 @@ body {
     line-height: 1.4;
 }
 .navbar {
-    background-color: #333;
-    padding-left: 22%;
+    background-color: #333333;
+    padding-left: 18.5%;
     display: flex;
     align-items: center;
     color: #fff;
@@ -21,9 +21,10 @@ body {
     margin-left: 60px;
 }
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 15px auto;
     padding: 0 15px;
+    align-items: center;
 }
 .content {
     width: 100%;
