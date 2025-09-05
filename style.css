@@ -20,6 +20,18 @@ body {
     text-decoration: none;
     margin-left: 60px;
 }
+
+.navbar h3 a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-left: 0; /* Override the general navbar a margin */
+}
+
+.navbar h3 a:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
 .container {
     max-width: 900px;
     margin: 15px auto;
