@@ -56,7 +56,20 @@
                 <p></p>
             </div> -->
             <div class="Selected Research" id="Research">
-                <h2>Selected Research</h2>
+                <h2>Research</h2>
+
+                <div class="research-item">
+                    <h3>Mitigating Loss of Plasticity by Preventing Hessian Spectral Collapse</h3>
+                    <p style="font-size: 14px; color: #666; margin: 5px 0;">To present at Neurips ARLET workshop 2025</p>
+                    <p><em>Under review</em> - <a href="https://arxiv.org/abs/2509.22335" target="_blank">[paper]</a> <a href="https://github.com/KevinGuo27/lop-jax" target="_blank">[code]</a> </p> 
+                    <p class="author"><strong>Naicheng He*</strong>, Kaicheng Guo*, Arjun Prakash*, Saket Tiwari, Tyrone Serapio, Ruo Yu Tao, Amy Greenwald, George Konidaris</p>
+                    <p>We investigate why deep neural networks suffer from loss of plasticity in deep continual learning, failing to learn new tasks without reinitializing parameters.
+                    We show that this failure is preceded by Hessian spectral collapse at new-task initialization, where meaningful curvature directions vanish and gradient descent becomes ineffective. 
+                    To characterize the necessary condition for successful training, we introduce the notion of τ-trainability and show that current plasticity preserving algorithms can be unified under this framework. 
+                    Targeting spectral collapse directly, we then discuss the Kronecker factored approximation of the Hessian, which motivates two regularization enhancements: maintaining high effective feature rank and applying L2 penalties. 
+                    Experiments on continual supervised and reinforcement learning tasks confirm that combining these two regularizers effectively preserves plasticity.</p>
+                </div>
+
                 <div class="research-item research-with-media">
                     <div class="research-media">
                         <video autoplay muted loop playsinline>
@@ -66,7 +79,7 @@
                     </div>
                     <div class="research-content">
                         <h3>Inverse Reinforcement Learning on GPUDrive</h3>
-                        <p style="font-size: 14px; color: #666; margin: 5px 0;">NYRL workshop 2025</p>
+                        <p style="font-size: 14px; color: #666; margin: 5px 0;">Presented at NYRL workshop 2025</p>
                         <p><em>In progress</em> - <a href="nyrl_submission_gpudrive (5).pdf" target="_blank">[write-up]</a> <a href="https://github.com/Arnie-He/gpudrive/tree/base_gail" target="_blank">[code]</a> <a href="InverseRL_on_gpudrive (1).pdf" target="_blank">[poster]</a></p>
                         <p class="author"><strong>Naicheng He</strong>, Arjun Prakash, Gokul Swamy, Amy Greenwald, Eugene Vinitsky</p>
                         <p>We explore the use of inverse reinforcement learning (IRL) to develop robust driving policies in GPUDrive. 
@@ -74,27 +87,13 @@
                             we investigate GAIL-style approaches with PPO as inner-loop optimizers, 
                             and discriminators trained on egocentric observations or observation-action pairs. 
                             Our experiments span 75 worlds with varying numbers of controlled agents and we investigated the difficulty of scaling IRL from single-agent to
-                             multi-agent environments. We evaluate policies using task-relevant metrics such as off-road counts, 
-                             collisions, goal-reaching rates, and hand-crafted episodic returns. 
-                             These early results raise intriguing questions about reward generalization, scalability, 
-                             and the design of efficient algorithms for multi-agent autonomy.</p>
+                            multi-agent environments. We evaluate policies using task-relevant metrics such as off-road counts, 
+                            collisions, goal-reaching rates, and hand-crafted episodic returns. 
+                            These early results raise intriguing questions about reward generalization, scalability, 
+                            and the design of efficient algorithms for multi-agent autonomy.</p>
                     </div>
                 </div>
-                <div class="research-item">
-                    <h3>Mitigating Loss of Plasticity by Preventing Hessian Spectral Collapse</h3>
-                    <p style="font-size: 14px; color: #666; margin: 5px 0;">Neurips ARLET workshop 2025</p>
-                    <p style="font-size: 14px; color: #666; margin: 5px 0;">Under review</p>
-                    <!-- <p style="font-size: 14px; color: #666; margin: 5px 0;">Neurips ARLET workshop 2025</p>
-                    <p><em>Under review</em> - <a href="#" target="_blank">[paper]</a> <a href="#" target="_blank">[code]</a> <a href="#" target="_blank">[poster]</a></p> -->
-                    <p class="author"><strong>Naicheng He*</strong>, Kaicheng Guo*, Arjun Prakash*, Saket Tiwari, Tyrone Serapio, Ruo Yu Tao, Amy Greenwald, George Konidaris</p>
-                    <p>Deep neural networks suffer from the loss of plasticity, gradually losing their ability to adapt to new tasks. We identify the root cause of this phenomenon as the Hessian spectral collapse, 
-                        where meaningful curvature directions vanish and optimization becomes ineffective. 
-                        We conduct extensive experiments to find that spectral collapse perfectly aligns with the onset of plasticity loss. 
-                        To explain this, we introduce the notion of τ-trainability, which unifies prior indicators and provides a principled characterization of plasticity. 
-                        Building on this framework, we discuss the Kroner factored approximation which motivates two regularization choices: preserving the effective feature rank and applying 
-                        L2 penalties, both of which directly counteract spectral collapse. 
-                        Experiments on continual supervised and reinforcement learning tasks confirm that this theoretically motivated strategy effectively preserves plasticity for deep neural networks.</p>
-                </div>
+                
                 <div class="research-item">
                     <h3>Bi-Level Policy Optimization with Nyström Hypergradients</h3>
                     <!-- <p style="font-size: 14px; color: #666; margin: 5px 0;">arXiv</p> -->
