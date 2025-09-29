@@ -9,11 +9,19 @@ body {
 }
 .navbar {
     background-color: #333333;
-    padding-left: 18.5%;
     display: flex;
     align-items: center;
     color: #fff;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-content {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
 }
 .navbar a {
     color: #fff;
@@ -248,14 +256,13 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .navbar {
-        margin-left: 0;
+    .navbar-content {
         flex-direction: column;
         align-items: center; /* Center align items */
         padding: 10px; /* Add padding for better spacing */
     }
 
-    .navbar div {
+    .navbar-content div {
         margin-bottom: 10px;
         width: 100%; /* Make div take full width */
         text-align: center; /* Center text */
