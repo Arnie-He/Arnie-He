@@ -27,7 +27,7 @@
                         where I do research advised by <a href="https://scholar.google.com/citations?user=aQCRuYQAAAAJ&hl=en" target="_blank">Professor Amy Greenwald</a> and 
                         <a href="https://cs.brown.edu/people/gdk/" target="_blank">Professor George Konidaris</a>.
                         
-                        My main research interest lies in automated decision making systems with a focus on reinforcement learning and multi-agent interactions.
+                        My main research interest lies in automated decision making systems with a current focus on reinforcement learning and multi-agent interactions.
                         
                         <br>
                         <br>
@@ -46,7 +46,7 @@
                             </a>
                         </p>
                         <p>
-                            <a href="Naicheng-He(Arnie).pdf" target="_blank">
+                            <a href="arnie_cv.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i> CV
                             </a>
                         </p>
@@ -104,6 +104,7 @@
                 <div class="research-item">
                     <h3>Bi-Level Policy Optimization with Nyström Hypergradients</h3>
                     <!-- <p style="font-size: 14px; color: #666; margin: 5px 0;">arXiv</p> -->
+                    <p style="font-size: 14px; color: #666; margin: 5px 0;">Presented at NYRL workshop 2025</p>
                     <p><em>Under review</em> - <a href="https://arxiv.org/abs/2505.11714" target="_blank">[paper]</a> <a href="https://github.com/Arnie-He/BLPO" target="_blank">[code]</a> <a href="BLPO_Poster.pdf" target="_blank">[poster]</a></p>
                     <p class="author">Arjun Prakash*, <strong>Naicheng He*</strong>, Denizalp Goktas, Amy Greenwald</p>
                     <p>The dependency of the actor on the critic in actor-critic (AC) reinforcement learning means that AC can be characterized as a bilevel optimization (BLO) problem, also called a Stackelberg game. This characterization motivates two modifications to vanilla AC algorithms. First, the critic's update should be nested to learn a best response to the actor's policy. Second, the actor should update according to a hypergradient that takes changes in the critic's behavior into account. Computing this hypergradient involves finding an inverse Hessian vector product, a process that can be numerically unstable. We thus propose a new algorithm, Bilevel Policy Optimization with Nyström Hypergradients (BLPO), which uses nesting to account for the nested structure of BLO, and leverages the Nyström method to compute the hypergradient. Theoretically, we prove BLPO converges to (a point that satisfies the necessary conditions for) a local strong Stackelberg equilibrium in polynomial time with high probability, assuming a linear parametrization of the critic's objective. Empirically, we demonstrate that BLPO performs on par with or better than PPO on a variety of discrete and continuous control tasks.
