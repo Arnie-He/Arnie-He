@@ -255,6 +255,21 @@ body {
     border-bottom: none;
 }
 
+/* Visitor globe */
+.globe-widget {
+    margin: 20px auto 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.globe-widget canvas,
+.globe-widget iframe {
+    max-width: 360px !important;
+    max-height: 360px !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
 @media (max-width: 1200px) {
     .navbar-content {
         flex-direction: column;
