@@ -255,17 +255,29 @@ body {
     border-bottom: none;
 }
 
-/* Visitor globe */
-.globe-widget {
-    margin: 20px auto 10px;
+/* Teaching + globe layout */
+.teaching-row {
     display: flex;
-    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.teaching-row .teaching {
+    flex: 3;
+}
+
+.teaching-row .globe-widget {
+    flex: 1;
+    max-width: 160px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
 }
 
 .globe-widget canvas,
 .globe-widget iframe {
-    max-width: 360px !important;
-    max-height: 360px !important;
+    max-width: 140px !important;
+    max-height: 140px !important;
     width: 100% !important;
     height: auto !important;
 }
@@ -275,6 +287,15 @@ body {
         flex-direction: column;
         align-items: center; /* Center align items */
         padding: 10px; /* Add padding for better spacing */
+    }
+
+    .teaching-row {
+        flex-direction: column;
+    }
+
+    .teaching-row .globe-widget {
+        justify-content: flex-start;
+        max-width: 180px;
     }
 
     .navbar-content div {
