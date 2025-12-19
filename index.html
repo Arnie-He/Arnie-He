@@ -31,7 +31,7 @@
                         
                         <br>
                         <br>
-                        Outside of research, I enjoy any competitive sports, i.e. tennis and soccer. I also enjoy strategic games including go and the civilization series.
+                        Outside of research, I enjoy any competitive sports, i.e. tennis and soccer. I also enjoy strategic games like go and the civilization series.
                         <br>
                     </p>
                     <div class="social-links">
@@ -58,10 +58,23 @@
                 </div>
             </div>
 
-            <!-- <div class="News" id="News">
+            <div class="news-section" id="News">
                 <h2>News</h2>
-                <p></p>
-            </div> -->
+                <div class="news-list" aria-label="Latest updates">
+                    <div class="news-item">
+                        <span class="news-date">Dec 19, 2025</span>
+                        <p> My paper, Bi-Level Policy Optimization with Nyström Hypergradients, was accepted by AAMAS 2026 — see you in Cyprus!</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">Dec 17, 2025</span>
+                        <p> I was nominated as CRA award Honorable Mention. </p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">Dec 2, 2025</span>
+                        <p> Going to NeurIPS 2025, looking for people to chat about RL and more!</p>
+                    </div>
+                </div>
+            </div>
             <div class="Selected Research" id="Research">
                 <h2>Research</h2>
 
@@ -104,7 +117,7 @@
                 <div class="research-item">
                     <h3>Bi-Level Policy Optimization with Nyström Hypergradients</h3>
                     <!-- <p style="font-size: 14px; color: #666; margin: 5px 0;">arXiv</p> -->
-                    <p style="font-size: 14px; color: #666; margin: 5px 0;">Presented at NYRL workshop 2025</p>
+                    <p style="font-size: 14px; color: #666; margin: 5px 0;">AAMAS 2026</p>
                     <p><em>Under review</em> - <a href="https://arxiv.org/abs/2505.11714" target="_blank">[paper]</a> <a href="https://github.com/Arnie-He/BLPO" target="_blank">[code]</a> <a href="BLPO_Poster.pdf" target="_blank">[poster]</a></p>
                     <p class="author">Arjun Prakash*, <strong>Naicheng He*</strong>, Denizalp Goktas, Amy Greenwald</p>
                     <p>The dependency of the actor on the critic in actor-critic (AC) reinforcement learning means that AC can be characterized as a bilevel optimization (BLO) problem, also called a Stackelberg game. This characterization motivates two modifications to vanilla AC algorithms. First, the critic's update should be nested to learn a best response to the actor's policy. Second, the actor should update according to a hypergradient that takes changes in the critic's behavior into account. Computing this hypergradient involves finding an inverse Hessian vector product, a process that can be numerically unstable. We thus propose a new algorithm, Bilevel Policy Optimization with Nyström Hypergradients (BLPO), which uses nesting to account for the nested structure of BLO, and leverages the Nyström method to compute the hypergradient. Theoretically, we prove BLPO converges to (a point that satisfies the necessary conditions for) a local strong Stackelberg equilibrium in polynomial time with high probability, assuming a linear parametrization of the critic's objective. Empirically, we demonstrate that BLPO performs on par with or better than PPO on a variety of discrete and continuous control tasks.

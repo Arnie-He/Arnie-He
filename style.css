@@ -255,29 +255,57 @@ body {
     border-bottom: none;
 }
 
-/* Teaching + globe layout */
-.teaching-row {
-    display: flex;
-    gap: 24px;
-    align-items: flex-start;
+/* News section */
+.news-section {
+    margin: 10px 0 25px;
 }
 
-.teaching-row .teaching {
-    flex: 3;
+.news-section h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
 }
 
-.teaching-row .globe-widget {
-    flex: 1;
-    max-width: 160px;
+.news-list {
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.news-item {
+    margin-bottom: 12px;
+}
+
+.news-item:last-child {
+    margin-bottom: 0;
+}
+
+.news-date {
+    display: inline-block;
+    font-weight: 600;
+    color: #0077b5;
+    margin-right: 8px;
+}
+
+.news-item p {
+    display: inline;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Visitor globe */
+.globe-widget {
+    margin: 20px auto 10px;
     display: flex;
-    justify-content: flex-end;
-    margin: 0;
+    justify-content: center;
 }
 
 .globe-widget canvas,
 .globe-widget iframe {
-    max-width: 140px !important;
-    max-height: 140px !important;
+    max-width: 360px !important;
+    max-height: 360px !important;
     width: 100% !important;
     height: auto !important;
 }
@@ -287,15 +315,6 @@ body {
         flex-direction: column;
         align-items: center; /* Center align items */
         padding: 10px; /* Add padding for better spacing */
-    }
-
-    .teaching-row {
-        flex-direction: column;
-    }
-
-    .teaching-row .globe-widget {
-        justify-content: flex-start;
-        max-width: 180px;
     }
 
     .navbar-content div {
